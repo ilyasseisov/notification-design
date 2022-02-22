@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Poppins';
+}
+
+.notification {
+  background: white;
+  width: 480px;
+  height: auto;
+  padding: 16px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+  border-right: 4px solid grey;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;
+}
+
+@media (max-width: 575.9px) {
+  .notification {
+    width: 300px;
+  }
+}
+
+.notification .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.notification .content .text {
+  font-size: 14px;
+  color: #4e4e4e;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+}
+
+.notification .content .icon {
+  height: 28px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 28px;
+          flex: 0 0 28px;
+  margin-right: 16px;
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+.notification.info {
+  border-color: #398efe;
+}
+
+.notification.info .icon {
+  background: url(../img/info.svg);
+}
+
+.notification.warning {
+  border-color: #fea839;
+}
+
+.notification.warning .icon {
+  background: url(../img/warning.svg);
+}
+
+.notification.error {
+  border-color: #fe394d;
+}
+
+.notification.error .icon {
+  background: url(../img/error.svg);
+}
+
+.notification.question {
+  border-color: #646464;
+}
+
+.notification.question .icon {
+  background: url(../img/question.svg);
+}
+/*# sourceMappingURL=s.css.map */
